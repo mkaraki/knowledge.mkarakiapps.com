@@ -26,7 +26,7 @@ jobs:
    - name: Run make4ht 
      uses: docker://ghcr.io/michal-h21/make4ht-action:latest 
      env: 
-       command: make
+       command: make makeenv all
 
    - name: Setup Pages
      uses: actions/configure-pages@v2
